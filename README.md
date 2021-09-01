@@ -1,4 +1,4 @@
-# Gov1372
+# Gov-1372
 
 This blog contains my work for Government 1372, *Political Psychology*, at Harvard University during Fall 2021. The folder names should be intuitive:
 
