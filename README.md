@@ -6,3 +6,4 @@ This blog contains my work for Government 1372, *Political Psychology*, at Harva
 * The data files that I've used are located in the *data* folder.
 * My R scripts are located in the *scripts* folder.
 * My graphics can be found in the *images* folder.
+* My PDF outputs can be found in the *outputs* folder.
