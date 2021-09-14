@@ -5,8 +5,8 @@ date: 2021-09-14
 ## Week 1 Analysis: Cognitive Decision-Making
 *Tuesday, September 14, 2021*
 
-This week, I am analyzing some aspects of cognitive decision-making, building off the work of [Atkinson et al (2009)](https://scholar.harvard.edu/files/renos/files/atkinsonenoshill2009.pdf) that was covered in class.
-]
+This week, I am analyzing some aspects of cognitive decision-making, building off the work of [Atkinson et al. (2009)](https://scholar.harvard.edu/files/renos/files/atkinsonenoshill2009.pdf) that was covered in class.
+
 ### National-Level Data
 To start, I will use the two-party popular vote (PV) share in past elections. As shown below, there have been many fluctuations in the PV share between the two major parties, suggesting that presidential elections in the United States have been quite competitive, at least for the past 70 years. 
 
