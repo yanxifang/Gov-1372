@@ -6,5 +6,5 @@ Hello! I'm Yanxi Fang, an undergraduate student at Harvard University majoring i
 Please note that any opinions expressed on this page are mine only, and do not express the views or opinions of any other entity.
 
 ## Blog
-### [Week 1: ](https://yanxifang.github.io/Gov-1372/2021/09/14/Week-One-Post.html)
-Tuesday, September 14, 2021: This week, I am exploring...
+### [Week 1: Cognitive Decision-Making](https://yanxifang.github.io/Gov-1372/2021/09/14/Week-One-Blog-Post.html)
+Tuesday, September 14, 2021: This week, I explore elements of cognitive decision-making using a U.S. political example.
