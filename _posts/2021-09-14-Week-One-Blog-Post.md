@@ -21,7 +21,16 @@ To start off with the analysis, I had to create an indicator of each electoral r
 
 ![Linear Regression for Seat Safety and Incumbent Facial Quality](https://yanxifang.github.io/Gov-1372/images/seatsafety_incumbentface.png)
 
-As shown above, the line of best fit (in black) on the first plot is almost horizontal, indicating the lack of a relationship, either positive or negative, between seat competitiveness and the incumbent's facial quality. In other words, the first plot suggests that incumbents in more competitive seats do not necessarily have more attractive faces (and vice versa: incumbents in safer seats do not necessarily have less attractive faces). Separating the incumbents by party (Democratic or Republican) in the second plot led to some notable changes, 
+As shown above, the line of best fit (in black) on the first plot is almost horizontal, indicating the lack of a relationship, either positive or negative, between seat competitiveness and the incumbent's facial quality. In other words, the first plot suggests that incumbents in more competitive seats do not necessarily have more attractive faces (and vice versa: incumbents in safer seats do not necessarily have less attractive faces). Separating the incumbents by party (Democratic or Republican) in the second plot led to some notable changes from a visual perspective, but ultimately, despite what the lines of best fit may suggest (i.e. Democrats having higher-quality faces in more competitive seats, and Republicans having lower-quality faces in more competitive seats), the numerical summary falls short. As displayed below, none of the coefficients have p-values that are even close to being statistically significant.
+
+| Model | Variable | Coefficient | P-Value |
+| --- | --- | --- | --- |
+| Overall| Constant | 0.2721 | 0.0386 |
+|  | Seat Competitiveness | 0.0065 | 0.9153 |
+| Democratic Only | Constant | 0.0358 | 0.854 |
+|  | Seat Competitiveness | 0.1220 | 0.190 |
+| Republican Only | Constant | 0.4739 | 0.00819 |
+|  | Seat Competitiveness | -0.0877 | 0.2738 |
 
 ![Ordered Logit Model for Seat Safety and Incumbent Facial Quality](https://yanxifang.github.io/Gov-1372/images/seatsafety_incumbentface_orderedlogit.png)
 
