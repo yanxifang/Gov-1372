@@ -27,10 +27,14 @@ As shown above, the line of best fit (in black) on the first plot is almost hori
 | --- | --- | --- | --- |
 | Overall| Constant | 0.2721 | 0.0386 |
 |  | Seat Competitiveness | 0.0065 | 0.9153 |
-| Democratic Only | Constant | 0.0358 | 0.854 |
-|  | Seat Competitiveness | 0.1220 | 0.190 |
-| Republican Only | Constant | 0.4739 | 0.00819 |
+| Democratic Only | Constant | 0.0358 | 0.8540 |
+|  | Seat Competitiveness | 0.1220 | 0.1900 |
+| Republican Only | Constant | 0.4739 | 0.0082 |
 |  | Seat Competitiveness | -0.0877 | 0.2738 |
+
+In other words, my original hypothesis that seat safety is negatively correlated with incumbent facial quality is clearly not reflected in the data.
+
+### Extension: 
 
 ![Ordered Logit Model for Seat Safety and Incumbent Facial Quality](https://yanxifang.github.io/Gov-1372/images/seatsafety_incumbentface_orderedlogit.png)
 
