@@ -34,10 +34,27 @@ As shown above, the line of best fit (in black) on the first plot is almost hori
 
 In other words, my original hypothesis that seat safety is negatively correlated with incumbent facial quality is clearly not reflected in the data.
 
-### Extension: Another Model Class
-Nonetheless, linear regression (which I used above) is not the only type of model that can be used to assess the relationship between the two variables of interest here. So, I decided to adopt a model -- the ordered multinomial logit model -- that I had encountered in Gov 52 in Chapter 6 of *Data Analysis Using Regression and Multilevel/Hierarchical Models* (Gelman and Hill, 2007). This model makes sense here because the competitiveness scores, which I had assigned on a scale of 1-4, are a great example of ordered categorical outcomes.
+### Extension: Another Model Class?
+Nonetheless, linear regression (which I used above) is not the only type of model that can be used to assess the relationship between the two variables of interest here. So, I decided to adopt a model -- the ordered multinomial logit model -- that I had encountered in Gov 52 in Chapter 6 of *Data Analysis Using Regression and Multilevel/Hierarchical Models* (Gelman and Hill, 2007). This model makes sense here because the competitiveness scores, which I had assigned on a scale of 1-4, are a great example of ordered categorical outcomes, which is what the multinomial logit model requires.
+
+The model is an extension of regular logit and probit regression, which are models that use probabilities to describe the relationship between variables. Specifically, the multinomial logit model uses a series of thresholds/cutpoints to denote where "switches" from one category to another occur; in this case, it would be the values of the facial quality measure at which the races move from one level of electoral race competitiveness to another (e.g. from least competitive to second-least competitive). The results of applying this model to the data are visualized below:
 
 ![Ordered Logit Model for Seat Safety and Incumbent Facial Quality](https://yanxifang.github.io/Gov-1372/images/seatsafety_incumbentface_orderedlogit.png)
 
+On this plot, the variables on the x- and y-axes are switched; now, seat competitiveness -- the ordered categorical variable -- is considered the outcome variable, which still makes sense because my original hypothesis was centered around a correlation and was not clear on which way the relationship goes (i.e. whether a more competitive seat leads to higher facial quality, or whether higher facial quality leads to more competition). Consequently, if there is a correlation between the two variables, then I would expect to see clear cutpoints and a convincing logit curve on the plot. However, this is not the case; the model is not staitistically significant and in fact, as shown below, the cutpoints are well beyond the range of the facial scores.
+
+| Variable | Coefficient | Std. Error |
+| --- | --- | --- |
+| face_rating | 0.0662 | 0.3995 |
+| intercept 1-2 cu | Seat Competitiveness | 0.0065 |
+| Democratic Only | Constant | 0.0358 |
+|  | Seat Competitiveness | 0.1220 |
+| Republican Only | Constant | 0.4739 |
+|  | Seat Competitiveness | -0.0877 |
+
+In other words, this second model class also shows that there is no conclusive correlation between the incumbent's facial quality and the competitiveness of the electoral race.
+
+### Conclusion
+While the data is limited in the sense that there is a strong reliance on a sole indicator of electoral competitiveness (Cook's Political Report), the findings about the lack of a correlation do provide (a minimal amount of) evidence that substitution heuristics and instantaneous decision-making may not be the best models for thinking about how voters make their decisions at the ballot box. If rapid decision-making were actually important, then it would stand to reason that because voters perceive lower-quality faces to represent less competent candidates, then incumbents should have higher-quality faces because they have already been voted in (and are seeking re-election), especially in more competitive districts/seats. 
 
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
