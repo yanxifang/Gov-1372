@@ -55,4 +55,6 @@ In other words, this second model class also shows that there is no conclusive c
 ### Conclusion
 While the data is limited in the sense that there is a strong reliance on a sole indicator of electoral competitiveness (Cook's Political Report), the findings about the lack of a correlation do provide (a minimal amount of) evidence that substitution heuristics and instantaneous decision-making may not be the best models for thinking about how voters make their decisions at the ballot box. If rapid decision-making were actually important, then it would stand to reason that because voters perceive lower-quality faces to represent less competent candidates, then incumbents should have higher-quality faces because they have already been voted in (and are seeking re-election), especially in more competitive districts/seats. 
 
+Nonetheless, it is critical to recognize that this analysis only touches on a very small part of political psychology. Contextually, the relationship (or lack thereof) between facial quality and electoral race competitiveness is only a subset of the facial quality research, which in turn is only a small subset of the field of understanding how human brains process information and use it to make political decisions. More to come next week...
+
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
