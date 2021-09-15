@@ -15,7 +15,9 @@ Underpinning the assumption that people (specifically, voters) could be influenc
 Thus, in the arena of political candidates, voters who aren't particularly familiar with a candidate's policy platforms or stances may choose to instead evaluate a familiar trait: whether the candidate appears competent (or at least, more competent than the opponent). Assuming that voters will have seen candidates at least once prior to the election (since pictures do not appear on ballots), psychological heuristics are why facial quality matters in politics.
 
 ### Incumbents and Competitiveness
-As an extension from Atkinson et al. (2009), I am looking to evaluate whether there is a relationship between incumbents (who are seeking re-election), their facial quality, and the competitiveness of the race. One would assume that 
+As an extension from Atkinson et al. (2009), I am looking to evaluate whether there is a relationship between incumbents seeking re-election, their facial quality, and the competitiveness of the race. Given the authors' conclusion that candidates with higher-quality faces tend to do better, the natural hypothesis for my question would be that incumbents in safer (i.e. less competitive) seats may have less-attractive faces.
+
+To start off with the analysis, I had to create an indicator of each electoral race's competitivenesstook the Cook Political Report assessment of the electoral race in the year prior to the election. I defined the least competitive races (1 on a scale of 4) to be Republican incumbents in "solid Republican" seats and Democratic incumbents in "solid Democratic" seats, while the most competive races were "tossups" (4 on a scale of 4). Then, I plotted this competition indicator against the 
 
 ![Linear Regression for Seat Safety and Incumbent Facial Quality](https://yanxifang.github.io/Gov-1372/images/seatsafety_incumbentface.png)
 
