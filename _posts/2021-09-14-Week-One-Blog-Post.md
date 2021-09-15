@@ -43,14 +43,12 @@ The model is an extension of regular logit and probit regression, which are mode
 
 On this plot, the variables on the x- and y-axes are switched; now, seat competitiveness -- the ordered categorical variable -- is considered the outcome variable, which still makes sense because my original hypothesis was centered around a correlation and was not clear on which way the relationship goes (i.e. whether a more competitive seat leads to higher facial quality, or whether higher facial quality leads to more competition). Consequently, if there is a correlation between the two variables, then I would expect to see clear cutpoints and a convincing logit curve on the plot. However, this is not the case; the model is not staitistically significant and in fact, as shown below, the cutpoints are well beyond the range of the facial scores.
 
-| Variable | Coefficient | Std. Error |
-| --- | --- | --- |
-| face_rating | 0.0662 | 0.3995 |
-| intercept 1-2 cu | Seat Competitiveness | 0.0065 |
-| Democratic Only | Constant | 0.0358 |
-|  | Seat Competitiveness | 0.1220 |
-| Republican Only | Constant | 0.4739 |
-|  | Seat Competitiveness | -0.0877 |
+| Value Name | Coefficient | Std. Error | Cutoff Point |
+| --- | --- | --- | --- |
+| face_rating | 0.0662 | 0.3995 | |
+| Intercept, 1 to 2 | -0.0006 | -0.0040 | -0.0094 |
+| Intercept, 2 to 3 | 0.9271 | 5.3786 | 14.0055 |
+| Intercept, 3 to 4 | 2.2429 | 8.8244 | 33.8836 |
 
 In other words, this second model class also shows that there is no conclusive correlation between the incumbent's facial quality and the competitiveness of the electoral race.
 
