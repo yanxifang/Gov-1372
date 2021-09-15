@@ -17,9 +17,11 @@ Thus, in the arena of political candidates, voters who aren't particularly famil
 ### Incumbents and Competitiveness
 As an extension from Atkinson et al. (2009), I am looking to evaluate whether there is a relationship between incumbents seeking re-election, their facial quality, and the competitiveness of the race. Given the authors' conclusion that candidates with higher-quality faces tend to do better, the natural hypothesis for my question would be that incumbents in safer (i.e. less competitive) seats may have less-attractive faces.
 
-To start off with the analysis, I had to create an indicator of each electoral race's competitivenesstook the Cook Political Report assessment of the electoral race in the year prior to the election. I defined the least competitive races (1 on a scale of 4) to be Republican incumbents in "solid Republican" seats and Democratic incumbents in "solid Democratic" seats, while the most competive races were "tossups" (4 on a scale of 4). Then, I plotted this competition indicator against the 
+To start off with the analysis, I had to create an indicator of each electoral race's competitivenesstook the Cook Political Report assessment of the electoral race in the year prior to the election. I defined the least competitive races (1 on a scale of 4) to be Republican incumbents in "solid Republican" seats and Democratic incumbents in "solid Democratic" seats, while the most competive races were "tossups" (4 on a scale of 4). Then, I plotted this competition indicator against the corresponding candidate's facial quality, as measured by Atkinson et al.
 
 ![Linear Regression for Seat Safety and Incumbent Facial Quality](https://yanxifang.github.io/Gov-1372/images/seatsafety_incumbentface.png)
+
+As shown above, the line of best fit (in black) on the first plot is almost horizontal, indicating the lack of a relationship, either positive or negative, between seat competitiveness and the incumbent's facial quality. In other words, the first plot suggests that incumbents in more competitive seats do not necessarily have more attractive faces (and vice versa: incumbents in safer seats do not necessarily have less attractive faces). Separating the incumbents by party (Democratic or Republican) in the second plot led to some notable changes, 
 
 ![Ordered Logit Model for Seat Safety and Incumbent Facial Quality](https://yanxifang.github.io/Gov-1372/images/seatsafety_incumbentface_orderedlogit.png)
 
