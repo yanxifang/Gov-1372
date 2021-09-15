@@ -34,7 +34,8 @@ As shown above, the line of best fit (in black) on the first plot is almost hori
 
 In other words, my original hypothesis that seat safety is negatively correlated with incumbent facial quality is clearly not reflected in the data.
 
-### Extension: 
+### Extension: Another Model Class
+Nonetheless, linear regression (which I used above) is not the only type of model that can be used to assess the relationship between the two variables of interest here. So, I decided to adopt a model -- the ordered multinomial logit model -- that I had encountered in Gov 52 in Chapter 6 of *Data Analysis Using Regression and Multilevel/Hierarchical Models* (Gelman and Hill, 2007). This model makes sense here because the competitiveness scores, which I had assigned on a scale of 1-4, are a great example of ordered categorical outcomes.
 
 ![Ordered Logit Model for Seat Safety and Incumbent Facial Quality](https://yanxifang.github.io/Gov-1372/images/seatsafety_incumbentface_orderedlogit.png)
 
