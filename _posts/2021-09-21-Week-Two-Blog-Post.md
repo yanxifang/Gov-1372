@@ -10,10 +10,10 @@ This week, I am analyzing part of the fundamental reasoning behind human coopera
 ### Cooperation and Human Evolution
 In his 2006 book, Robert Axelrod describes a theory of cooperation, noting that self-interested individuals may not necessarily have the right incentives to cooperate with each other without a centralized authority compelling such cooperation. Building off the classic Prisoner's Dilemma game (shown below), where defecting from cooperation can actually yield better results for an individual, 
 
-| P1 $\downarrow$ | P2 $\rightarrow$ | C | D |
-| --- | --- | --- | --- |
-| C | R = 3 | R = 3 | S = 0 | T = 5 | 
-| D | T = 5 | S = 0 | P = 1 | P = 1 | 
+| P1, P2 | C | D |
+| --- | --- | --- |
+| C | R = 3, R = 3 | S = 0, T = 5 | 
+| D | T = 5, S = 0 | P = 1, P = 1 | 
 
 Underpinning the assumption that people (specifically, voters) could be influenced by candidates' facial appearances is the idea of heuristics. This is well-explained by [Kahneman (2003)](https://doi.apa.org/doiLanding?doi=10.1037%2F0003-066X.58.9.697), who asserts that as a likely result of human evolution, intuition (quick decision-making) and reasoning (protracted decision-making) operate separately in the mind as a two-system process, with intuition being put to use much more frequently. As part of intuition, some thoughts come to the mind much more easily and quickly, such as the familiar characteristics of an otherwise unfamiliar subject. Subsequently, the mind naturally uses those familiar characteristics to judge that subject, as part of a process called heuristics.
 
