@@ -57,7 +57,7 @@ These strategies were played against each other in a round-robin style, with eac
 
 ![Comparison of Scores for Six Cooperation Strategies](https://yanxifang.github.io/Gov-1372/images/axelrod_strategies_scores.png)
 
-
+There are a number of notable patterns here. First, despite Axelrod's findings, **"Tit-For-Tat" was not the dominant strategy based on the simulations I ran.** Instead, strategies that are arguably more aggressive in terms of defection enforcement procedures (i.e. "Backstabber" and "Fool Me Once") performed better, particularly in terms of the total score but also in terms of the number of wins.
 
 ### Application to Political Psychology (and General Politics)
 
