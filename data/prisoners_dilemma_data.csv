@@ -1,0 +1,16 @@
+﻿player1,player2,score1,score2
+titfortat,backstabber,295,300
+titfortat,cooperator,300,300
+titfortat,random,223.16,225.8
+titfortat,foolMeOnce,300,300
+titfortat,cycler,273,278
+backstabber,cooperator,304,294
+backstabber,random,289.16,71.91
+backstabber,foolMeOnce,304,294
+backstabber,cycler,379,64
+cooperator,random,147.24,401.84
+cooperator,foolMeOnce,300,300
+cooperator,cycler,225,350
+random,foolMeOnce,63.09,296.64
+random,cycler,312.2,187.65
+foolMeOnce,cycler,386,51
