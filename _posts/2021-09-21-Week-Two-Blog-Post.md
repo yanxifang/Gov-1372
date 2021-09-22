@@ -7,8 +7,12 @@ date: 2021-09-21
 
 This week, I am analyzing part of the fundamental reasoning behind human cooperation (and how cooperation became part of the human evolutionary process), building off the work of [Axelrod (2006)](https://www.basicbooks.com/titles/robert-axelrod/the-evolution-of-cooperation/9780465005642/) that was discussed in class.
 
-### Facial Competence and Decision-Making
-In their 2009 paper, Atkinson, Enos, and Hill provide a quantitative measure for the perceived competence of U.S. Senate candidates, taking a paired-comparison survey approach to collect a large number of responses that are based upon relatively quick, instinctual choices. They find that "in more competitive races, the out-party tends to run candidates with higher quality faces," suggesting that to some extent, a candidate's appearance may matter (although the authors do note that "the challenging candidate's face is never the difference between a challenger and incumbent victory.")
+### Cooperation and Human Evolution
+In his 2006 book, Robert Axelrod describes a theory of cooperation, noting that self-interested individuals may not necessarily have the right incentives to cooperate with each other without a centralized authority compelling such cooperation. Building off the classic Prisoner's Dilemma game (shown below), where defecting from cooperation can actually yield better results for an individual, 
+
+| P1 $\downarrow$ | P2 $\rightarrow$ | C | D |
+| C | R = 3 | R = 3 | S = 0 | T = 5 | 
+| D | T = 5 | S = 0 | P = 1 | P = 1 | 
 
 Underpinning the assumption that people (specifically, voters) could be influenced by candidates' facial appearances is the idea of heuristics. This is well-explained by [Kahneman (2003)](https://doi.apa.org/doiLanding?doi=10.1037%2F0003-066X.58.9.697), who asserts that as a likely result of human evolution, intuition (quick decision-making) and reasoning (protracted decision-making) operate separately in the mind as a two-system process, with intuition being put to use much more frequently. As part of intuition, some thoughts come to the mind much more easily and quickly, such as the familiar characteristics of an otherwise unfamiliar subject. Subsequently, the mind naturally uses those familiar characteristics to judge that subject, as part of a process called heuristics.
 
