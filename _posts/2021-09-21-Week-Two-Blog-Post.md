@@ -44,6 +44,8 @@ For this week's blog post, I have replicated part of Axelrod's "tournament" of d
 
 These strategies were played against each other in a round-robin style, with each strategy facing each of the other 5 strategies once. For each of the 15 encounters, I recorded the total number of points scored by each strategy, as well as the winner.
 
+![Comparison of Scores for Six Cooperation Strategies](https://yanxifang.github.io/Gov-1372/images/axelrod_strategies_scores.png)
+
 ### Application to Political Psychology (and General Politics)
 
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
