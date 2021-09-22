@@ -20,6 +20,26 @@ However, Axelrod points out that the Prisoner's Dilemma game can actually be sol
 ### Simulating Cooperation
 However, the principle of cooperation is not sufficient by itself. Cooperation can take many forms, especially with regard to how individuals respond to defections by the other party (or to continued cooperation); as previously mentioned, unilateral decisions to not cooperate can often prove advantageous for the defecting party. Thus, different people can have different views on what cooperation looks like, leading to different strategies of cooperation (i.e. different sets of rules about when and when not to cooperate).
 
-This was a central part of Axelrod's work: he invited submissions of computer programs from game theorists from around the world, with the aim of testing different strategies against each other to see which yielded the best results. 
+This was a central part of Axelrod's work: he invited submissions of computer programs from game theorists from around the world, with the aim of testing different strategies against each other to see which yielded the best results. Conceptually, the strategy that yielded the highest scores (i.e. the most benefits for the player) would be most advantageous from an evolutionary perspective, because that party would have the most resources with which to survive.
+
+For this week's blog post, I have replicated part of Axelrod's "tournament" of different strategies. I chose six strategies to focus on, with their patterns described below:
+- Backstabber
+  - Cooperates until the opponent defects 3 times.
+  - Defects forever after that.
+  - Always defects in the last 2 rounds.
+- Cooperator
+  - Cooperates systematically.
+ - Cycler
+  - Cooperates 3 times in a row, then defect once.
+  - Repeats sequence until the end of the tournament.
+ - Fool Me once
+  - Cooperates the first time it plays a new opponent.
+  - Keeps cooperating after the first defection of the opponent.
+  - Defects systematically after the opponent defects a second time.
+- Random
+  - Cooperates or defects at random.
+ - Tit-for-Tat
+  - Cooperates the first time it plays a new opponent.
+  - Mirrors the last move of each opponent in subsequent encounters.
 
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
