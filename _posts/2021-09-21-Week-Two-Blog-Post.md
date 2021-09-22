@@ -32,7 +32,7 @@ For this week's blog post, I have replicated part of Axelrod's "tournament" of d
 - Cycler
   - Cooperates 3 times in a row, then defect once.
   - Repeats sequence until the end of the tournament.
-- Fool Me once
+- Fool Me Once
   - Cooperates the first time it plays a new opponent.
   - Keeps cooperating after the first defection of the opponent.
   - Defects systematically after the opponent defects a second time.
@@ -41,5 +41,7 @@ For this week's blog post, I have replicated part of Axelrod's "tournament" of d
 - Tit-for-Tat
   - Cooperates the first time it plays a new opponent.
   - Mirrors the last move of each opponent in subsequent encounters.
+
+These strategies were played against each other in a round-robin style, with each strategy facing each of the other 5 strategies once. For each of the 15 encounters, I recorded the total number of points scored by each strategy, as well as the winner.
 
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
