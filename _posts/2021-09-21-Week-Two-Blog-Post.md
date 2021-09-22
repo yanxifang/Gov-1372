@@ -11,6 +11,7 @@ This week, I am analyzing part of the fundamental reasoning behind human coopera
 In his 2006 book, Robert Axelrod describes a theory of cooperation, noting that self-interested individuals may not necessarily have the right incentives to cooperate with each other without a centralized authority compelling such cooperation. Building off the classic Prisoner's Dilemma game (shown below), where defecting from cooperation can actually yield better results for an individual, 
 
 | P1 $\downarrow$ | P2 $\rightarrow$ | C | D |
+| --- | --- | --- | --- |
 | C | R = 3 | R = 3 | S = 0 | T = 5 | 
 | D | T = 5 | S = 0 | P = 1 | P = 1 | 
 
