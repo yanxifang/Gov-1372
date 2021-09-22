@@ -38,7 +38,7 @@ For this week's blog post, I have replicated part of Axelrod's "tournament" of d
   - Defects systematically after the opponent defects a second time.
 - Random
   - Cooperates or defects at random.
- - Tit-for-Tat
+- Tit-for-Tat
   - Cooperates the first time it plays a new opponent.
   - Mirrors the last move of each opponent in subsequent encounters.
 
