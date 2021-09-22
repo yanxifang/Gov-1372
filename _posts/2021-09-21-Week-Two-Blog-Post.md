@@ -16,6 +16,6 @@ In his 2006 book, Robert Axelrod describes a theory of cooperation based on the 
 | D | T = 5, S = 0 | P = 1, P = 1 | 
 
 ### Simulating Cooperation
-However, the principle of cooperation is not sufficient by itself. Cooperation can take many forms, especially with regard to how individuals respond to defections by the other party (or to continued cooperation); as previously mentioned, unilateral decisions to not cooperate can often prove advantageous for the defecting party. Thus, different people can have different views on what cooperation looks like, leading to different strategies of cooperation (i.e. different sets of rules about when and when not to cooperate).
+However, the principle of cooperation is not sufficient by itself. Cooperation can take many forms, especially with regard to how individuals respond to defections by the other party (or to continued cooperation); as previously mentioned, unilateral decisions to not cooperate can often prove advantageous for the defecting party. Thus, different people can have different views on what cooperation looks like, leading to different strategies of cooperation (i.e. different sets of rules about when and when not to cooperate). This was a central part of Axelrod's work: he called for many 
 
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
