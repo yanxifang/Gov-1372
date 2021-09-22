@@ -8,7 +8,7 @@ date: 2021-09-21
 This week, I am analyzing part of the fundamental reasoning behind human cooperation (and how cooperation became part of the human evolutionary process), building off the work of [Axelrod (2006)](https://www.basicbooks.com/titles/robert-axelrod/the-evolution-of-cooperation/9780465005642/) that was discussed in class.
 
 ### Cooperation and Human Evolution
-In his 2006 book, Robert Axelrod describes a theory of cooperation, noting that self-interested individuals may not necessarily have the right incentives to cooperate with each other without a centralized authority compelling such cooperation. Building off the classic Prisoner's Dilemma game (shown below), where defecting from cooperation can actually yield better results for an individual, 
+In his 2006 book, Robert Axelrod describes a theory of cooperation based on the notion that repeated human interaction over time will create incentives for cooperation. Starting with the intuitive idea that self-interested individuals may not necessarily have the incentives to cooperate with each other without a centralized authority compelling such cooperation, Axelrod cites the classic Prisoner's Dilemma game (shown below), where defecting from cooperation can actually yield better results for an individual. However, as Axelrod points out, the Prisoner's Dilemma game can actually be solved, with the most common solution being repeated interactions between players.
 
 | P1, P2 | C | D |
 | --- | --- | --- |
