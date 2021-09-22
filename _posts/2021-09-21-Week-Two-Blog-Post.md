@@ -29,10 +29,10 @@ For this week's blog post, I have replicated part of Axelrod's "tournament" of d
   - Always defects in the last 2 rounds.
 - Cooperator
   - Cooperates systematically.
- - Cycler
+- Cycler
   - Cooperates 3 times in a row, then defect once.
   - Repeats sequence until the end of the tournament.
- - Fool Me once
+- Fool Me once
   - Cooperates the first time it plays a new opponent.
   - Keeps cooperating after the first defection of the opponent.
   - Defects systematically after the opponent defects a second time.
