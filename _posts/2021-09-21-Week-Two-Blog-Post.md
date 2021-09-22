@@ -22,7 +22,7 @@ However, the principle of cooperation is not sufficient by itself. Cooperation c
 
 This was a central part of Axelrod's work: he invited submissions of computer programs from game theorists from around the world, with the aim of testing different strategies against each other to see which yielded the best results. Conceptually, the strategy that yielded the highest scores (i.e. the most benefits for the player) would be most advantageous from an evolutionary perspective, because that party would have the most resources with which to survive.
 
-For this week's blog post, I have replicated part of Axelrod's "tournament" of different strategies. I chose six strategies to focus on, with their patterns described below:
+For this week's blog post, I have replicated part of Axelrod's "tournament" of different strategies. I chose six strategies to focus on, with their behavioral patterns described below:
 - Backstabber
   - Cooperates until the opponent defects 3 times.
   - Defects forever after that.
@@ -41,10 +41,23 @@ For this week's blog post, I have replicated part of Axelrod's "tournament" of d
 - Tit-for-Tat
   - Cooperates the first time it plays a new opponent.
   - Mirrors the last move of each opponent in subsequent encounters.
+  - *Note*: Axelrod found this strategy to be dominant, i.e. prevailing over all others in his "tournament."
 
-These strategies were played against each other in a round-robin style, with each strategy facing each of the other 5 strategies once. For each of the 15 encounters, I recorded the total number of points scored by each strategy, as well as the winner.
+These strategies were played against each other in a round-robin style, with each strategy facing each of the other 5 strategies once. For each of the 15 encounters, I recorded the winner, as well as the number of points scored by each strategy. The final results are provided below:
+
+| Player | Total Score | Number of Wins |
+| --- | --- | --- |
+| Backstabber | 1576 | 5 |
+| Cooperator | 1266 | 0 |
+| Cycler | 931 | 2 |
+| Fool Me Once | 1577 | 2 |
+| Random | 1075 | 3 |
+| Tit-for-Tat | 1391 | 0 |
+| *Tie* | | 3 |
 
 ![Comparison of Scores for Six Cooperation Strategies](https://yanxifang.github.io/Gov-1372/images/axelrod_strategies_scores.png)
+
+
 
 ### Application to Political Psychology (and General Politics)
 
