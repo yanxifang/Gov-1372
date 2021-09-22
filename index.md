@@ -10,4 +10,4 @@ Please note that any opinions expressed on this page are mine only, and do not e
 Tuesday, September 14, 2021: This week, I explore elements of cognitive decision-making using a U.S. political example.
 
 ### [Week 2: Human Cooperation](https://yanxifang.github.io/Gov-1372/2021/09/21/Week-Two-Blog-Post.html)
-Tuesday, September 21, 2021: This week, I consider some fundamental strategies of cooperation and apply them to politics.
+Tuesday, September 21, 2021: This week, I consider some of the fundamental reasoning behind cooperation and apply it to politics.
