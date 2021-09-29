@@ -10,6 +10,6 @@ This week, I examine some of the issues associated with groups and identities, b
 ### Partisanship and Its Salience
 The two-party system of politics has existed in the United States for more than a century now, but yet, the issue of (hyper)partisanship is relatively new and is still emerging today. How has this become the case in American politics?
 
-As it turns out, the answer is relatively intuitive. Human brains use associative networks to access information quickly, allowing us to assess the characteristics of unknown things by drawing connections/parallels to related things that are known (this is closely tied to the heuristics that I described in [Week 1](https://yanxifang.github.io/Gov-1372/posts/2021-09-14-Week-One-Blog-Post.html)). 
+As it turns out, the answer is relatively intuitive. Human brains use associative networks to access information quickly, allowing us to assess the characteristics of unknown things by drawing connections/parallels to related things that are known (this is closely tied to the heuristics that I described in [Week 1](https://yanxifang.github.io/Gov-1372/2021/09/14/Week-One-Blog-Post.html)). 
 
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
