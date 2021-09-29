@@ -21,8 +21,8 @@ In class, we conducted a parallel version of the Klar et al. experiment. Student
 
 Using this data, I compared the (un)happiness answers across each of the three randomly-assigned variations of the question, *and* across two separate groups: weak partisans and strong partisans. The results are shown below. (N.B. Strong partisans are respondents who indicate that they identify strongly with either of the two major parties, while everyone else is considered a weak partisan.)
 
-!(Happiness and Unhappiness with Out-Party Marriage)[https://yanxifang.github.io/Gov-1372/images/proportions_unhappiness_outpartymarriage.png]
+![Happiness and Unhappiness with Out-Party Marriage](https://yanxifang.github.io/Gov-1372/images/proportions_unhappiness_outpartymarriage.png)
 
-
+As shown above, 
 
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
