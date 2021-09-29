@@ -11,3 +11,6 @@ Tuesday, September 14, 2021: This week, I explore elements of cognitive decision
 
 ### [Week 2: Human Cooperation](https://yanxifang.github.io/Gov-1372/2021/09/21/Week-Two-Blog-Post.html)
 Tuesday, September 21, 2021: This week, I consider some of the fundamental reasoning behind cooperation and apply it to politics.
+
+### [Week 3: Groups and Identities](https://yanxifang.github.io/Gov-1372/2021/09/28/Week-Three-Blog-Post.html)
+Tuesday, September 28, 2021: This week, I consider the effects of group identity on partisanship and individuals' party and policy preferences.
