@@ -17,4 +17,12 @@ But how does salience translate into partisanship? The relationship between thes
 ### Measuring Partisanship
 Both Iyengar and Westwood (2015) and Klar et al. (2018) attempt to provide quantitative measures of partisanship and polarization through experimental surveys. The former studied the concept of "affective polarization," which the authors defined as "the tendency of people...to view opposing partisans negatively and copartisans positively," a more formal and exact definition of the phenomenon I described above. They ultimately found, unsurprisingly, that partisans of both parties tended to be biased in favor of their own party -- in both political and non-political situations. Klar et al. (2018) took this even further, applying the test of partisanship to something as personal as marriage, asking respondents about their feelings should their child marry a person from the opposing party. There was again a finding of bias, although with weak partisans (and independents), Klar et al. found some evidence of people just being hesistant about talking about any type of politics whatsoever.
 
+In class, we conducted a parallel version of the Klar et al. experiment. Students were asked two questions: whether they would be happy or unhappy with their child marrying someone from the Democratic Party, and the same question for the Republican Party. There were three randomly-assigned variations of that question: the potential in-law being someone who "rarely" talks about politics, someone who "frequently" talks about politics, and then the baseline (no description about the frequency). The results were then matched with results from an earlier survey that asked about the respondents' political affiliations/beliefs, resulting in the dataset `Sep23ClassData_clean.csv`. 
+
+Using this data, I compared the (un)happiness answers across each of the three randomly-assigned variations of the question, *and* across two separate groups: weak partisans and strong partisans. The results are shown below. (N.B. Strong partisans are respondents who indicate that they identify strongly with either of the two major parties, while everyone else is considered a weak partisan.)
+
+!(Happiness and Unhappiness with Out-Party Marriage)[https://yanxifang.github.io/Gov-1372/images/proportions_unhappiness_outpartymarriage.png]
+
+
+
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
