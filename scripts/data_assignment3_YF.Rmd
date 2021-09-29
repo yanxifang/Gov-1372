@@ -1,0 +1,73 @@
+---
+title: "Gov 1372 - Groups and Identities"
+author: "Yanxi Fang"
+date: "September 23, 2021"
+output: pdf_document
+urlcolor: blue
+---
+
+```{r, warning = FALSE, message = FALSE}
+# load packages
+library(tidyverse)
+library(gridExtra)
+
+# read data
+marriage_data <- read_csv('Sep23ClassData_clean.csv')
+```
+
+## Question 6 (Data Science Question)
+**We might also be interested in if things looked different for weak vs. strong partisans. Pick one of the two outcome variables you just examined and make a plot that would help us understand if responses within and across treatment groups differ between weak and strong partisans.**
+
+In the given dataset, there were two main outcome variables: the (un)happiness with a prospective in-law of a different party, and the polarization of respondents. For this question, I am choosing to focus on the former, expanding upon the graph provided in Question 3 to distinguish between weak and strong partisans. Below, the plot is virtually identical in setup to the one from Question 3, except that I am differentiating between strong and weak partisans and plotting the two subsets of data side-by-side.
+
+As show on my plot, weak partisans in the class are much more evenly divided between being happy and being unhappy with an out-party marriage, regardless of whether the in-law talks about politics frequently or infrequently. The opposite is true for strong partisans: there is a significant skew toward being unhappy with an out-party marriage, even when the in-law talks about politics infrequently. This finding intuitively makes sense, because strong partisans would be expected to care a lot about their own party, while weak partisans are more neutral/undecided and may not care nearly as much.
+
+Within each group (strong or weak partisans), the findings also make sense. For weak partisans, the "frequently" treatment group had the highest proportion of "unhappy" responses, which is intuitive because even though the respondent may not care too much about their party, the fact that the question includes the word "frequently" probably generated a "system 1" response that lead to more of a negative response than there was if the frequency hadn't been mentioned at all. Meanwhile, for strong partisans, it is interesting to see that the trends were very similar for the control and "frequently" groups, which suggests the strong effect of group identity -- and thus, of the fear of outsiders. This is partly reinforced by the fact that the "rarely" group has (relatively) lower levels of unhappiness, which suggests the same idea of "system 1" thinking is in play: the "rarely" could make the prospect of an out-party marriage seem more palatable for some respondents.
+
+```{r}
+# two main outcome variables in the study:
+# rates of unhappiness with a prospective out-party in-law
+# rates of respondents being affectively polarized
+
+# my approach:
+# group by treatment groups AND find overall...
+# ...difference between weak and strong partisans...
+# ...using 2 side by side plots
+
+# weak vs strong partisans as the 2 plots
+# x = T/F for unhappiness with prospective out-party in-law
+# y = proportion pertaining to x-variable
+# group = treatment groups
+
+# plot 1: weak partisans
+a <- ggplot(data = marriage_data %>% filter(strongPARTISAN==FALSE)
+                            %>% filter(is.na(outPartyUnhappy)==FALSE)) +
+                            # choose only weak partisans
+                            # filter out NAs
+  geom_bar(mapping = aes(x = outPartyUnhappy, y = ..prop.., group = 1),
+           stat = "count", fill = "springgreen") +
+                            # plot the proportions
+  ylim(0, 1) + facet_wrap(~treatment) +
+                            # group by treatment
+  ylab("Proportion") + xlab("Unhappy with Out-Party Marriage") + 
+  ggtitle("Proportions - Weak Partisans") + theme_bw()
+
+b <- ggplot(data = marriage_data %>% filter(strongPARTISAN==TRUE)
+                            %>% filter(is.na(outPartyUnhappy)==FALSE)) +
+                            # choose only weak partisans
+                            # filter out NAs
+  geom_bar(mapping = aes(x = outPartyUnhappy, y = ..prop.., group = 1),
+           stat = "count", fill = "springgreen4") +
+                            # plot the proportions
+  ylim(0, 1) + facet_wrap(~treatment) +
+                            # group by treatment
+  ylab("Proportion") + xlab("Unhappy with Out-Party Marriage") + 
+  ggtitle("Proportions - Strong Partisans") + theme_bw()
+
+# arrange grid for saving externally
+grid.arrange(a, b, ncol = 2)
+graph <- arrangeGrob(a, b, ncol = 2,
+                     top = "Proportions of Unhappiness with Out-Party Marriage")
+ggsave("proportions_unhappiness_outpartymarriage.png", graph, height = 4, width = 8)
+```
+
