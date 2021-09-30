@@ -25,6 +25,8 @@ Using this data, I compared the (un)happiness answers across each of the three r
 
 As shown above, **there is a drastic difference between strong and weak partisans.** On the whole, the strong partisans were *very* unhappy about their child marrying someone of the opposite party, and this changed only slightly with the "rarely talks about politics" addition to the question. Meanwhile, weak partisans tended to be less unhappy, with a 50-50 ratio of unhappiness across the three random variations of the question. This shouldn't be too surprising: after all, the stronger connection one feels to their party, the less likely we would expect that person to be accepting of an outsider -- someone with opposing/conflicting values; the opposite would hold for weak partisans.
 
+Findings like this, in a class full of politically-engaged students, are troublesome. Although policy debates at the local, state, and national levels are relatively distant compared to the very personal prospect of having an "out-party" in-law, the fact that there are such strong feelings based solely on one criterion -- party identification -- points to a significant degree of polarization and partisanship. Assuming that legislators do respond to the desires of the electorate (especially the most vocal and active parts of it, such as people who majored in political science), future gridlock seems almost inevitable.
+
 ### Extension
 
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
