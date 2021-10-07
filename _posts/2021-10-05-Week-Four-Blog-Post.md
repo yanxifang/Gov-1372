@@ -7,8 +7,8 @@ date: 2021-10-05
 
 This week, I evaluate the relevance of Social Dominance Theory -- as proposed by [Sidanius and Pratto (1999)](https://www.cambridge.org/core/books/social-dominance/ADA29C256881001463D6E2777404DB95) -- to hierarchies and political behavior within the United States.
 
-### Partisanship and Its Salience
-The two-party system of politics has existed in the United States for more than a century now, but yet, the issue of (hyper)partisanship is a relatively new one. How has this become the case in American politics?
+### Social Dominance Theory and Hierarchies
+Now that I've explored the dynamics and politics of [groups](https://yanxifang.github.io/Gov-1372/2021/09/28/Week-Three-Blog-Post.html), a natural next step is to understand how groups interact with each other -- and how that is manifested in today's society. To answer this question, Sidanius and Pratto (1999) propose using the Social Dominance Theory framework, which essentially states that group-based social hierarchies structure human societies, with hierarchies determined by (a) age, (b) gender, or (c) an arbitrary set of rules, and the ultimate social outcomes determined by institutions, which can either enhance or attenuate hierarchies.
 
 As it turns out, the answer is relatively intuitive. Human brains use associative networks to access information quickly, allowing us to assess the characteristics of unknown things by drawing connections/parallels to related things that we do know (this is closely tied to the heuristics that I described in [Week 1](https://yanxifang.github.io/Gov-1372/2021/09/14/Week-One-Blog-Post.html)). Most Americans know about (or at least, have heard about) political parties, and with the emergence of social media and a 24/7 news cycle over the past decade, political matters are now almost everywhere, making parties particularly useful for categorizing those issues. In turn, **political parties have become more salient within our associative networks**.
 
