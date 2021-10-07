@@ -26,6 +26,6 @@ The first thing I evaluated was the relationship between SDO scores and party af
 
 Another political outcome of interest would be how individuals voted in important elections, such as the 2016 U.S. presidential election. To analyze this, I ran two regressions to model the relationship between a voter's choice in the 2016 election (the outcome variable) and that voter's characteristics, which included their social dominance score,  gender (female or non-female), race (white or non-white), education (on a 1-6 scale: 1 representing someone without a high school diploma and 6 representing someone with a postgraduate degree), age, 3-category party identification (1: Democrat, 2: Independent, 3: Repubilcan), and 5-category political ideology (1 being very liberal to 5 being very conservative). The results are displayed in the table below:
 
-![Social Dominance Orientation and 2016 Presidential Vote](https://yanxifang.github.io/Gov-1372/images/social_dominance_repvote2016.png)
+![Social Dominance Orientation and 2016 Presidential Vote](https://yanxifang.github.io/Gov-1372/images/social_dominance_repvote2016.PNG)
 
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
