@@ -14,3 +14,6 @@ Tuesday, September 21, 2021: This week, I consider some of the fundamental reaso
 
 ### [Week 3: Groups and Identities](https://yanxifang.github.io/Gov-1372/2021/09/28/Week-Three-Blog-Post.html)
 Tuesday, September 28, 2021: This week, I consider the effects of group identity on partisanship and individuals' party and policy preferences.
+
+### [Week 4: Hierarchies](https://yanxifang.github.io/Gov-1372/2021/10/05/Week-Four-Blog-Post.html)
+Tuesday, October 5, 2021: This week, I evaluate Social Dominance Theory and its relationship to hierarchies in politics.
