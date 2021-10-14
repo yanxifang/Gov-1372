@@ -17,3 +17,6 @@ Tuesday, September 28, 2021: This week, I consider the effects of group identity
 
 ### [Week 4: Hierarchies](https://yanxifang.github.io/Gov-1372/2021/10/05/Week-Four-Blog-Post.html)
 Tuesday, October 5, 2021: This week, I evaluate Social Dominance Theory and its relationship to hierarchies in politics.
+
+### [Week 5: Personality and Worldview](https://yanxifang.github.io/Gov-1372/2021/10/12/Week-Five-Blog-Post.html)
+Tuesday, October 12, 2021: This week, I look at the concept of measuring personality and using those results to determine a person's political ideology.
