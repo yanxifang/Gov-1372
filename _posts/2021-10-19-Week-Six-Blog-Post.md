@@ -33,7 +33,7 @@ To see how different the results might be if I switched to a binary outcome vari
 
 As shown above, **the same trend holds when we consider *whether* a country started a conflict instead of *how many* conflicts a country started. When holding the Polity score constant, having female suffrage leads to a lower probability of a country starting a conflict.** The fact that the conclusion remains the same when modifying how we code the information gives us more evidence to support the idea that gender-related differences in worldview can lead to substantively different policy outcomes, but as previously mentioned, this is still an analysis that is very limited in scope, and there are many other things that can (and should) be explored.
 
-### Application: Real-World Manifestations
-
+### Application: A Real-World Example?
+An interesting anecdote that is consistent with what Barnhart et al. find is the case of former German Chancellor Angela Merkel. Having led Germany for 16 years, she has developed a reputation not only for taking a [consensus-based approach](https://www.bbc.com/news/world-europe-58597504) to domestic politics, but also serving as both a *de facto* [leader for the European Union](https://www.cfr.org/in-brief/merkels-legacy-and-future-germany) and a [champion of liberal democracy](https://www.ft.com/content/653302ca-be3a-11e6-8b45-b8b81dd5d080), all of which are very cooperation-based, non-confrontational things -- and all of which could be considered to be diametrically opposed to warfare. This fits into the theory of female politicians and leaders being more pro-peace, but obviously, this is just an anecdote where `n = 1`, making it inappropriate to make any generalizations.
 
 *Click [here](https://yanxifang.github.io/Gov-1372/) to return to the front page.*
