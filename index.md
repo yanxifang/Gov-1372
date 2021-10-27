@@ -23,3 +23,6 @@ Tuesday, October 12, 2021: This week, I look at the concept of measuring persona
 
 ### [Week 6: Gender and Worldview](https://yanxifang.github.io/Gov-1372/2021/10/19/Week-Six-Blog-Post.html)
 Tuesday, October 19, 2021: This week, I look at the relationship between gender and political preferences, which can have significant implications for both domestic policy and international relations.
+
+### [Week 7: Symbolic Politics](https://yanxifang.github.io/Gov-1372/2021/10/26/Week-Seven-Blog-Post.html)
+Tuesday, October 26, 2021: This week, I consider the implications of "symbolic politics," the idea that individuals' symbolic predispositions (which are typically acquired early in life) are used to evaluate complex political situations.
