@@ -1,5 +1,5 @@
 ---
-title: "Week 7 Analysis: Gender and Worldview"
+title: "Week 7 Analysis: Symbolic Politics"
 date: 2021-10-26
 ---
 ## Week 7 Analysis: Symbolic Politics
