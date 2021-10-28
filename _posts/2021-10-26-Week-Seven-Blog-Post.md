@@ -16,10 +16,12 @@ Of course, these attitudes should take on certain characteristics, because not a
 - **Constraint**: the attitude/predisposition remains consistent among related objects (e.g. similar attitude toward similar objects, different attitude toward diametrically-opposed objects).
 - **Power**: the attitude/predisposition has the strongest influence and "wins out" over other related attitudes/predispositions.
 
-### Implications of Symbolic Politics
-Symbolic politics matter because they An example of symbolic politics is (political) violence. 
+Without meeting these 3 criteria, it would be hard to see how one specific attitude would be able to shape one's political decision-making, especially for complex situations where a more thought-out process might be required before a decision is made. In this sense, symbolic politics is different from situational politics, a theory that would suggest that people evaluate political objects/actions comprehensively and on a case-by-case basis, even if their ultimate decision proves irrational. 
 
-As an additional note, symbolic politics is a concept different from situational politics, which suggests that people evaluate political objects/actions comprehensively and on a case-by-case basis, either rationally or irrationally. 
+### Implications of Symbolic Politics
+Symbolic politics matter because although the resulting political behavior will be at the individual level, that behavior can be easily scaled up if it turns out that many people have the same underlying predispositions and thus respond the same way to political events. One way in which symbolic politics can have a major impact is through violence, such as in the form of a riot or an otherwise destructive form of a political protest. For example, in 1965, the [Watts riot in Los Angeles](http://crdl.usg.edu/events/watts_riots/?Welcome) was a mass protest responding to the community's ongoing grievances and discontent that ultimately resulted in a significant amount of destruction and damage. Although there were some who argued that the participants were mostly African-Americans from the South, who had grown up under a very discriminatory system and thus resented the persistent societal inequalities, the most convincing data (which involved a team of researchers actually asking participants on the ground as the riots unfolded) shows that the participants most likely to engage in volence were actually socialized locally, where they were taught about principles like equality and thus were more frustrated about the conditions they were facing -- to the point that many of them were fine with participating in the destruction.
+
+
 
 A paper that we read for class this week is [Reny and Newman (2021)](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/opinionmobilizing-effect-of-social-protest-against-police-violence-evidence-from-the-2020-george-floyd-protests/C62FCC5556A43F0AE3CDA5EB6AFD3673)
 
