@@ -8,13 +8,16 @@ date: 2021-10-26
 This week, I take a closer look at the idea of "symbolic politics," which bears some resemblance to two concepts that I've explored in earlier weeks: [worldview](https://yanxifang.github.io/Gov-1372/2021/10/12/Week-Five-Blog-Post.html) and [heuristics](https://yanxifang.github.io/Gov-1372/2021/09/14/Week-One-Blog-Post.html). Since symbolic politics can have strong influences on individual-level political behavior, which includes things like riots and racialized policies (and thus, goes beyond just electoral politics), understanding the topic is important for explaining outcomes in both democratic and non-democratic countries.
 
 ### Symbolic Politics
-The general idea of symbolic politics is that people use attitudes gained early in life to evaluate and navigate complex political situations based on specific objects/actions that are directly associated with those situations. The attitudes should take on certain characteristics, because not all attitudes developed early in life are necessarily going to influence a person's evaluation of political objects and actions. Typically, these are the 3 criteria to be considered as influencing a person's symbolic attitudes:
+The general idea of symbolic politics is that people use attitudes and predispositions gained early in life to evaluate and navigate complex political situations based on specific objects/actions that are directly associated with those situations. In this sense, symbolic politics is tied to the idea of heuristics: in both, decision-making is not necessarily rational or well thought-out, but instead, is more instinctive and relies on a person's perceptions or feelings toward one certain characteristic (or several characteristics) of the political object/event at hand.
 
-- **Stability**: consistent responses for the same object over time.
-- **Constraint**: consistent responses over similar attitude objects.
-- **Power**: has the strongest influence when cnonsidering other objects.
+Of course, these attitudes should take on certain characteristics, because not all attitudes developed early in life are necessarily going to influence a person's evaluation of political objects and actions. For example, the original iteration of an attitude that evolves over time would likely not be the only factor that a person considers in making a decision. Typically, these are the 3 criteria for an attitude or predisposition to be considered as influencing a person's symbolic attitudes:
 
-An example of symbolic politics is (political) violence. 
+- **Stability**: the attitude/predisposition remains similar for the same object over time.
+- **Constraint**: the attitude/predisposition remains consistent among related objects (e.g. similar attitude toward similar objects, different attitude toward diametrically-opposed objects).
+- **Power**: the attitude/predisposition has the strongest influence and "wins out" over other related attitudes/predispositions.
+
+### Implications of Symbolic Politics
+Symbolic politics matter because they An example of symbolic politics is (political) violence. 
 
 As an additional note, symbolic politics is a concept different from situational politics, which suggests that people evaluate political objects/actions comprehensively and on a case-by-case basis, either rationally or irrationally. 
 
