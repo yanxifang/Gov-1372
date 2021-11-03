@@ -1,11 +1,11 @@
 ---
-title: "Week 7 Analysis: Symbolic Politics"
-date: 2021-10-26
+title: "Week 8 Analysis: Intergroup Contact"
+date: 2021-11-02
 ---
-## Week 7 Analysis: Symbolic Politics
-*Tuesday, October 26, 2021*
+## Week 8 Analysis: Intergroup Contact
+*Tuesday, November 2, 2021*
 
-This week, I take a closer look at the idea of "symbolic politics," which bears some resemblance to two concepts that I've explored in earlier weeks: [worldview](https://yanxifang.github.io/Gov-1372/2021/10/12/Week-Five-Blog-Post.html) and [heuristics](https://yanxifang.github.io/Gov-1372/2021/09/14/Week-One-Blog-Post.html). Since symbolic politics can have strong influences on individual-level political behavior, which includes things like riots and racialized policies (and thus, goes beyond just electoral politics), understanding the topic is important for explaining outcomes in both democratic and non-democratic countries.
+This week, I examine the implications of intergroup contact, the idea that more interactions between members of different groups can lead to positive benefits in terms of acceptance and tolerance between those groups.
 
 ### Symbolic Politics
 The general idea of symbolic politics is that people use attitudes and predispositions gained early in life to evaluate and navigate complex political situations based on specific objects/actions that are directly associated with those situations. In this sense, symbolic politics is tied to the idea of heuristics: in both, decision-making is not necessarily rational or well thought-out, but instead, is more instinctive and relies on a person's perceptions or feelings toward one certain characteristic (or several characteristics) of the political object/event at hand.
