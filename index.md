@@ -26,3 +26,6 @@ Tuesday, October 19, 2021: This week, I look at the relationship between gender 
 
 ### [Week 7: Symbolic Politics](https://yanxifang.github.io/Gov-1372/2021/10/26/Week-Seven-Blog-Post.html)
 Tuesday, October 26, 2021: This week, I consider the implications of "symbolic politics," the idea that individuals' symbolic predispositions (which are typically acquired early in life) are used to evaluate complex political situations.
+
+### [Week 8: Intergroup Contact](https://yanxifang.github.io/Gov-1372/2021/11/02/Week-Eight-Blog-Post.html)
+Tuesday, November 2, 2021: This week, I evaluate the idea of positive intergroup contact, the idea that having more interactions between diffrerent groups can improve the relationship between those groups.
