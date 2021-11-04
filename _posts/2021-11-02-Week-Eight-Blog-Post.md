@@ -22,11 +22,13 @@ One approach to measuring intergroup contact is measuring affect -- something th
 ### Application: Harvard Students and Imagined Contact with Members of the Opposite Party
 An experimental structure similar to what Wang et al. (2021) used was applied to our class, and instead of measuirng attitudes toward Japanese people, the quantity of interest being measured was attitudes toward members of the out-party (mostly the Republican Party, since the overwhelming majority of Harvard students are very liberal.) Everything else was similar: respondents were randomly assigned to the treatment or control groups, with the control group being given a hypothetical situation of a bus ride with beautiful scenery, and the treatment group being given a hypothetical situation of a bus ride next to a member of the out-party; affective feelings were then collected. The resulting data is found in the file `Oct28ClassData.csv`.
 
+To analyze the results, I ran several linear regressions. Across all of them, the `AffectDiff_avg` variable (the average difference in affective feelings between the in- and out-parties) was the dependent variable, and at the very least, the `Treated` variable (indicating whether the respondent was in the treatment or control group) was used as the independent variable. The models I ran are as follows:
 
-
-- A linear model with only two predictors: party identification, which was on a 1-to-7 scale with 7 being a "Strong Republican", and the pre-/post-protest binary indicator variable.
-- A logistic model with all of the predictors that I've listed above. The outcome variable was converted to a binary one, with "Strongly Unfavorable" views of the police being coded as a `1` and all other attitudes being coded as a `0`.
-- An ordered probit model with all of the predictors that I've listed above, which is a better model than linear because the ordered probit model is specifically designed for outcome variables that are ordered and can only take on integer values (such as the 1-to-4 scale of police favorability).
+- A linear model with only one predictor: `Treated`.
+- A linear model with two predictors: `Treated` and `ClosestParty` (an indicator of which of the two major US political parties the respondent feels closer to). This regression might allow us to see if imagined intergroup contact has a larger effect on Democrats or on Republicans (or whether the effect is similar on members of either party).
+- A linear model with two predictors: `Treated` and `strongPARTISAN` (an indciator of whether the respondent is a strong partisan of the party that they identify closest with). This regression might allow us to see whether imagined intergroup contact has a larger effect on strong or weak partisans in terms of changing their views toward the out-party.
+- A linear model with various demographic predictors: `Treated`, `gender`, `college_stats` (whether the respondent has taken a college-level statistics course), `year` (year in college), and `US` (whether the respondent was born in the US). Similarly, this might allow us to see whether there are differences in how the treatment affects different demographic groups.
+- A combined linear model with all of the variables listed above: `Treated`, `ClosestParty`, `strongPARTISAN`, `gender`, `college_stats`, `year`, and `US`.
 
 ![Police Favorability Model Results](https://yanxifang.github.io/Gov-1372/images/police_favorability_models.PNG)
 
