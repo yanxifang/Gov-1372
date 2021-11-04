@@ -32,7 +32,7 @@ To analyze the results, I ran several linear regressions. Across all of them, th
 
 The results are printed below:
 
-![Harvard Student Out-Party Perception Model Results](https://yanxifang.github.io/Gov-1372/images/harvardstudent_perception_outparty.PNG)
+![Harvard Student Out-Party Perception Model Results](https://yanxifang.github.io/Gov-1372/images/harvardstudents_perception_outparty.PNG)
 
 The five models have the same outcome variable, so it is possible to compare them. As shown,  it's useful to note that all coefficients across the three models are statistically significant, and that each variable's estimated coefficient has the same sign (positive or negative) across the three models. Since higher values of the outcome variable (even for the binary outcome in model 2) suggest a more negative view toward the police, the models clearly show that either being non-white or answering after the protests had occurred is predicted to, by itself, lead to a less favorable view of the police when holding other predictors constant. Meanwhile, being Hispanic, being more right on the left-right spectrum, being older, being college-educated, or having a higher household income are each predicted to, by themselves, lead to a more favorable view of the police, when holding other predictors constant. The only things that are surprising here is that being Hispanic or being college-educated are more likely to lead to more favorable views of police, since the current political discourse suggests that both Hispanics and college-educated individuals are highly supportive of Democrats, who, in turn, are highly supportive of the protests and not so supportive of the police.
 
