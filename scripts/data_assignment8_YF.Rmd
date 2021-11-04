@@ -1,0 +1,228 @@
+---
+title: 'Data Exploration: Intergroup Contact'
+author: "Yanxi Fang"
+date: "October 28, 2021"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+  word_document: default
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(estimatr)
+library(haven)
+library(stargazer)
+library(effsize)
+```
+
+This week, we discussed the importance of intergroup contact in settings like neighborhoods, public transportation, and sports leagues. All of these studies ensured or inferred that intergroup contact actually took place. However, some researchers have studied the possibility that even \textit{imagined} contact with a member of an outgroup can change people's perception of that group. In this Data Exploration assignment we will explore two datasets derived from imagined intergroup contact experiments. In part one, you will look at data from a recent study conducted by Dong Wang, Iain Johnston (a professor in the Harvard Government Department) and Baoyu Wang. Wang et al. (2021) conducted an experiment on a group of Chinese students to determine if imagined social contact could reduce antipathy toward Japanese people. In part two, you will look at the results of our in-class survey, which tested whether imagined social contact with a member of one's less-preferred political party would change attitudes toward members of that party. You can do either part first, but you will probably find the exercise most valuable if you do some of each part.
+
+If you have a question about any part of this assignment, please ask! Note that the actionable part of each question is **bolded**.
+
+# Part One: Chinese Students and Perception of Japanese People
+
+**Data Details:**
+
+* File Name: \texttt{ChinaJapanData.csv}
+
+* Source: These data are from [Wang et al. (2021)](https://drive.google.com/open?id=111pbDphCslbMXbmPBwKNQeQipFAXEgWm&authuser=renos%40g.harvard.edu&usp=drive_fs). Please take some time to skim this paper in order to get a feel for the population they studied, their key hypotheses, and their experimental procedure. Subjects were asked to imagine a bus ride, either one in which they talked to a Japanese person (treatment) or just enjoyed the scenery (control). They were then asked a series of questions to assess their affective feelings toward Japanese and Chinese people, their perceptions of the characteristics of Japanese and Chinese identity, and demographic, policy, and pschological questions to serve as control variables.
+
+Variable Name         | Variable Description
+--------------------- | --------------------------------------
+\texttt{subject}         | Anonymized identifier for each experimental subject
+\texttt{treated}  | Binary variable equal to \texttt{TRUE} if the subject was told to imagine a bus ride with a Japanese person (the treatment) and \texttt{FALSE} if the subject was told to imagine the scenery on a bus ride (control)
+\texttt{JapanPos}  | Affective feeling about Japanese people ranging from 1 (negative) to 7 (positive)
+\texttt{JapanWarm}  | Affective feeling about Japanese people ranging from 1 (cool) to 7 (warm)
+\texttt{JapanAdmire}  | Affective feeling about Japanese people ranging from 1 (loathing) to 7 (admiration)
+\texttt{JapanRespect}  | Affective feeling about Japanese people ranging from 1 (contempt) to 7 (respect)
+\texttt{ChinaPos}  | Affective feeling about Chinese people ranging from 1 (negative) to 7 (positive) 
+\texttt{ChinaWarm}  | Affective feeling about Chinese people ranging from 1 (cool) to 7 (warm)  
+\texttt{ChinaAdmire}  | Affective feeling about Chinese people ranging from 1 (loathing) to 7 (admiration) 
+\texttt{ChinaRespect}  | Affective feeling about Chinese people ranging from 1 (contempt) to 7 (respect) 
+\texttt{PosDiff}  | Difference between the Chinese and Japanese positivity score
+\texttt{WarmDiff}  | Difference between the Chinese and Japanese warmth score
+\texttt{AdmireDiff}  | Difference between the Chinese and Japanese admiration score
+\texttt{RespectDiff}  | Difference between the Chinese and Japanese respect score 
+\texttt{JapanID\_avg}  | Average of 30 ratings of Japanese people on identity trait pairs, coded from 1 to 7 where higher numbers are less favorable; see p. 12 of Wang et al. (2021) for details
+\texttt{ChinaID\_avg}  | Average of the same 30 identity ratings of Chinese people
+\texttt{ID\_diff\_avg}  | Difference between \texttt{ChinaID\_avg} and \texttt{JapanID\_avg}
+\texttt{age}  | Age in years
+\texttt{gender}  | Gender, coded 1 for male and 0 for female
+\texttt{jpfriend}  | Indicator variable for if subject has a Japanese friend (1) or does not (0)
+\texttt{MediaInd}  | Attitude toward media independence from the government ranging from 1 (strongly oppose) to 5 (strongly support)
+\texttt{freetrade}  | Indicator variable for if subject supports free trade (1) or does not (0)
+\texttt{school\_major}  | Categorical variable denoting major in school; 1 = social sciences, 2 = humanities, 3 = sciences and engineering, 4 = law
+\texttt{PrejControl}  | Motivation to Control Prejudice index; an average of 17 items rated from 1 to 7 in which higher scores denote a greater motivation to control the expression of prejudice
+
+```{r}
+# load the data
+ChinaJapan <- read_csv('ChinaJapanData.csv', show_col_types = FALSE)
+```
+
+## Question 1
+
+### Part a
+The new variables `avg_jap`, `avg_chi`, and `avg_diff` are created below to reflect the average affective feeling toward Japanese people, the average affective feeling toward Chinese people, and the average difference between the two, respectively.
+
+```{r}
+ChinaJapan <- ChinaJapan %>%
+  mutate(avg_jap = (JapanPos + JapanWarm + JapanAdmire + JapanRespect)/4) %>%
+  mutate(avg_chi = (ChinaPos + ChinaWarm + ChinaAdmire + ChinaRespect)/4) %>%
+  mutate(avg_diff = avg_chi - avg_jap)
+```
+
+### Part b
+
+Below, I run multiple t-tests to determine the statistical significance associated with the mean values. I did this for all three affect averages from part (a), as well as two individual affect items: `JapanAdmire` and `ChinaAdmire`. The results are printed below.
+
+As shown, the averages are substantially different between the treatment and control groups for the `avg_jap`, `avg_diff`, and `JapanAdmire` variables, while the averages are similar between the two groups for the `avg_chi` and `ChinaAdmire` variables. This shows up in the t-tests: the two variables with similar averages across the treatment and control groups had p-values greater than 0.05, meaning that at the 95% confidence level, we cannot reject the null hypothesis that the average in the treatment group is the same as the average in the control group.
+
+Thus, it seems that imagined social contact did (positively) change subjects' affect toward Japanese people, but not toward Chinese people. Since the average affect score toward Japanese people is lower than the average affect score toward Chinese people for both the treatment and control groups, the fact that there was an increase in the affect toward Japanese people as a result of the treatment means that affective polarization is being reduced, since the gap in the scores is being narrowed as a result of the treatment. 
+
+```{r}
+q1b <- ChinaJapan %>%
+  group_by(treated) %>%
+  select(treated, avg_jap, avg_chi, avg_diff, JapanAdmire, ChinaAdmire) %>%
+  summarise(avg_jap = mean(avg_jap),
+            avg_chi = mean(avg_chi),
+            avg_diff = mean(avg_diff),
+            jap_adm = mean(JapanAdmire),
+            chi_adm = mean(ChinaAdmire))
+
+q1b
+
+ChinaJapan_treated <- ChinaJapan %>%
+  filter(treated == "TRUE")
+
+ChinaJapan_control <- ChinaJapan %>%
+  filter(treated == "FALSE")
+
+t.test(ChinaJapan_treated$avg_jap, ChinaJapan_control$avg_jap)
+t.test(ChinaJapan_treated$avg_chi, ChinaJapan_control$avg_chi)
+t.test(ChinaJapan_treated$avg_diff, ChinaJapan_control$avg_diff)
+t.test(ChinaJapan_treated$JapanAdmire, ChinaJapan_control$JapanAdmire)
+t.test(ChinaJapan_treated$ChinaAdmire, ChinaJapan_control$ChinaAdmire)
+```
+
+### Part c
+
+For each of the above variables, I calculated a Cohen's D value. As shown below, the value is small-medium for `avg_diff`, medium for `avg_jap`, negligible for `avg_chi`, medium-large for `JapanAdmire`, and negligible for `ChinaAdmire`. These interpretations match my intuitive interpretation, which is that the respondents in the treatment group would experience some difference in affect toward the out-group. These interpretations are also consistent with my interpretation from (b), which stated that `avg_diff`, `avg_jap`, and `JapanAdmire` had statistically-significant differences between the treatment and control groups.
+
+```{r}
+cohen.d(ChinaJapan_treated$avg_diff, ChinaJapan_control$avg_diff)
+cohen.d(ChinaJapan_treated$avg_jap, ChinaJapan_control$avg_jap)
+cohen.d(ChinaJapan_treated$avg_chi, ChinaJapan_control$avg_chi)
+cohen.d(ChinaJapan_treated$JapanAdmire, ChinaJapan_control$JapanAdmire)
+cohen.d(ChinaJapan_treated$ChinaAdmire, ChinaJapan_control$ChinaAdmire)
+```
+
+## Question 3: Data Science Question
+
+### Part a
+
+For this question, I chose `AffectDiff\_avg`, the average difference in affect scores toward the Chinese versus toward the Japanese, as the dependent variable. In addition to the `treated` variable (which indicates whether a respondent was in the treatment or control group), I chose `jpfriend` (whether the respondent has a Japanese friend), `age`, and `gender` as control variables. I hypothesize that respondents with Japanese friends would have a smaller value of `AffectDiff\_avg` (thus indicating a more similar attitude toward Chinese people as toward Japanese people), when holding all other variables constant. I hypothesize the same for younger people and for females -- that younger or female people, when holding all other variables constant, would have a lower value of `AffectDiff\_avg`.
+
+### Part b
+
+Below, I ran a linear multiple regression model with the three variables I mentioned above, as well as the `treated` variable, as the independent variables. The regression output is printed below. The `treated` variable has an estimated coefficient of $-0.64566$, which indicates that respondents in the treatment group had a smaller difference in affect scores toward Chinese versus affect scores toward Japanese; this coefficient is also statistically significant at the 95% confidence level, with a p-value of $0.0273$ (i.e. less than $0.05$). However, the rest of the variables did *not* have statistically significant coefficients: all of the p-values were substantially higher than $0.05$, meaning that the coefficient is not statistically different from zero (and thus making the interpretation not meaningful). 
+
+```{r}
+model3b <- lm(avg_diff ~ treated + jpfriend + age + gender, data = ChinaJapan)
+summary(model3b)
+```
+
+### Part c
+Below, I created a coefficient regression plot containing the visualized results of the regression from part (b).
+
+```{r}
+table3c <- tidy(model3b)
+table3c <- table3c %>%
+  mutate(lower = estimate - 1.96*std.error) %>%
+  mutate(upper = estimate + 1.96*std.error)
+
+table3c %>%
+  ggplot(aes(x = term, y = estimate)) +
+  geom_point() +
+  geom_errorbar(aes(ymin = lower, ymax = upper, width = 0.2)) +
+  geom_hline(yintercept = 0, color = "red", lty = 2) +
+  xlab("Coefficient Name") + ylab("Estimated Coefficient and 95% CI") +
+  ggtitle("Multiple Regression Results for Avg. Difference in Affect Scores") +
+  theme_bw()
+```
+
+# Part Two: Harvard Students and Perception of Members of the Other Party
+
+**Data Details:**
+
+* File Name: \texttt{Oct28ClassData.csv}
+
+* Source: These data are from the Qualtrics survey you all took last week. About half of you were in the control condition and were simply asked to imagine a bus ride with beautiful scenery; the other half were in the treatment condition and were asked to imagine a bus ride next to a member of your non-preferred US political party. All students were then asked a series of questions to assess their affective feelings toward Democrats and Republicans and their perceptions of the characteristics of Democratic and Republican identity. Additional control variables were merged from the class background survey.
+
+Variable Name         | Variable Description
+--------------------- | --------------------------------------
+\texttt{Treated}  | Binary variable equal to \texttt{TRUE} if the subject was told to imagine a bus ride with a member of the opposing political party (the treatment) and \texttt{FALSE} if the subject was told to imagine the scenery on a bus ride (control)
+\texttt{ClosestParty}  | Which of the two major US political parties the subject feels closes to
+\texttt{strongPARTISAN}  | Binary variable coded as \texttt{TRUE} if subject self-identifies as a strong partisan and \texttt{FALSE} otherwise
+\texttt{ControlScenario\_1}  | First text-based reflection of the imagined bus ride for those in the control condition
+\texttt{ControlScenario\_2}  | Second text-based reflection of the imagined bus ride for those in the control condition
+\texttt{ControlScenario\_3}  | Third text-based reflection of the imagined bus ride for those in the control condition 
+\texttt{TreatmentScenario\_1}  | First text-based reflection of the imagined bus ride for those in the treatment condition  
+\texttt{TreatmentScenario\_2}  | Second text-based reflection of the imagined bus ride for those in the treatment condition 
+\texttt{TreatmentScenario\_3}  | Third text-based reflection of the imagined bus ride for those in the treatment condition 
+\texttt{RepublicanAffect\_1}  | Affective feeling about Republicans ranging from 1 (negative) to 7 (positive)
+\texttt{RepublicanAffect\_2}  | Affective feeling about Republicans ranging from 1 (cool) to 7 (warm)
+\texttt{RepublicanAffect\_3}  | Affective feeling about Republicans ranging from 1 (loathing) to 7 (admiration)
+\texttt{RepublicanAffect\_4}  | Affective feeling about Republicans ranging from 1 (contempt) to 7 (respect) 
+\texttt{DemocraticAffect\_1}  | Affective feeling about Democrats ranging from 1 (negative) to 7 (positive)
+\texttt{DemocraticAffect\_2}  | Affective feeling about Democrats ranging from 1 (cool) to 7 (warm)
+\texttt{DemocraticAffect\_3}  | Affective feeling about Democrats ranging from 1 (loathing) to 7 (admiration)
+\texttt{DemocraticAffect\_4}  | Affective feeling about Democrats ranging from 1 (contempt) to 7 (respect)
+\texttt{RepublicanIdentity\_1}  | Rating of Republican identity trait from 1 (obstinate) to 7 (open-minded) (note that identity favorability is associated with the higher number, unlike in the data from Part One)
+\texttt{RepublicanIdentity\_2}  | Rating of Republican identity trait from 1 (evil) to 7 (moral) 
+\texttt{RepublicanIdentity\_3}  | Rating of Republican identity trait from 1 (arrogant) to 7 (humble)
+\texttt{RepublicanIdentity\_4}  | Rating of Republican identity trait from 1 (cruel) to 7 (kind)
+\texttt{DemocraticIdentity\_1}  | Rating of Democratic identity trait from 1 (obstinate) to 7 (open-minded)
+\texttt{DemocraticIdentity\_2}  | Rating of Democratic identity trait from 1 (evil) to 7 (moral) 
+\texttt{DemocraticIdentity\_3}  | Rating of Democratic identity trait from 1 (arrogant) to 7 (humble)
+\texttt{DemocraticIdentity\_4}  | Rating of Democratic identity trait from 1 (cruel) to 7 (kind)
+\texttt{gender}  | Character variable reflecting self-identified gender
+\texttt{college\_stats}  | Binary variable coded as \texttt{TRUE} if subject self-identifies as having taken college-level statistics and \texttt{FALSE} otherwise
+\texttt{year}  | Year in college from 1 to 4
+\texttt{US}  | Binary variable coded as \texttt{TRUE} if subject self-identifies as having been born in the United States and \texttt{FALSE} otherwise
+\texttt{InPartyAffect\_(1-4)}  | Affective feelings about the in-party using the same numbering scheme as above
+\texttt{InPartyAffect\_avg}  | Average affective feelings about the in-party
+\texttt{OutPartyAffect\_(1-4)}  | Affective feelings about the out-party using the same numbering scheme as above
+\texttt{OutPartyAffect\_avg}  | Average affective feelings about the out-party
+\texttt{InPartyIdentity\_(1-4)}  | Identity ratings about the in-party using the same numbering scheme as above
+\texttt{InPartyIdentity\_avg}  | Average identity ratings about the in-party
+\texttt{OutPartyIdentity\_(1-4)}  | Identity ratings about the out-party using the same numbering scheme as above
+\texttt{OutPartyAffect\_avg}  | Average identity ratings about the out-party
+\texttt{AffectDiff\_(1-4)}  | Difference in affective feelings between in-party and out-party using the same numbering scheme as above
+\texttt{AffectDiff\_avg}  | Average difference in affective feelings between in-party and out-party
+\texttt{IdentityDiff\_(1-4)}  | Difference in identity ratings between in-party and out-party using the same numbering scheme as above
+\texttt{IdentityDiff\_avg}  | Average difference in identity ratings between in-party and out-party
+
+
+```{r}
+# load the data
+ClassExperiment <- read_csv('Oct28ClassData.csv', show_col_types = FALSE)
+
+# run models (for blog)
+model1 <- lm(AffectDiff_avg ~ Treated, data = ClassExperiment)
+model2 <- lm(AffectDiff_avg ~ Treated + ClosestParty, data = ClassExperiment)
+model3 <- lm(AffectDiff_avg ~ Treated + strongPARTISAN, data = ClassExperiment)
+model4 <- lm(AffectDiff_avg ~ Treated + gender + college_stats + year + US, 
+             data = ClassExperiment)
+model5 <- lm(AffectDiff_avg ~ Treated + ClosestParty + strongPARTISAN + gender +
+               college_stats + year + US, data = ClassExperiment)
+```
+
+```{r, results = 'asis'}
+stargazer(model1, model2, model3, model4, model5, header = F, 
+          title = "Harvard Students' Perception of the Out-Party",
+          column.sep.width = "1pt", font.size = "tiny")
+```
