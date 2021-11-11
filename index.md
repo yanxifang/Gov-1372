@@ -29,3 +29,6 @@ Tuesday, October 26, 2021: This week, I consider the implications of "symbolic p
 
 ### [Week 8: Intergroup Contact](https://yanxifang.github.io/Gov-1372/2021/11/02/Week-Eight-Blog-Post.html)
 Tuesday, November 2, 2021: This week, I evaluate the idea of positive intergroup contact, the idea that having more interactions between diffrerent groups can improve the relationship between those groups.
+
+### [Week 9: Emotion](https://yanxifang.github.io/Gov-1372/2021/11/09/Week-Nine-Blog-Post.html)
+Tuesday, November 9, 2021: This week, I take a look at the role that emotion plays in American politics.
