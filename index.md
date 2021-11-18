@@ -32,3 +32,6 @@ Tuesday, November 2, 2021: This week, I evaluate the idea of positive intergroup
 
 ### [Week 9: Emotion](https://yanxifang.github.io/Gov-1372/2021/11/09/Week-Nine-Blog-Post.html)
 Tuesday, November 9, 2021: This week, I take a look at the role that emotion plays in American politics.
+
+### [Week 10: Context and Behavior](https://yanxifang.github.io/Gov-1372/2021/11/16/Week-Ten-Blog-Post.html)
+Tuesday, November 16, 2021: This week, I assess the role of contextual influences on political behavior.
