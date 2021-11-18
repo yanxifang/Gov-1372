@@ -5,7 +5,7 @@ date: 2021-11-16
 ## Week 10 Analysis: Context and Behavior
 *Tuesday, November 16, 2021*
 
-This week, I consider the implications of human emotion on politics, and especially the role that emotion can play in creating anxiety and motivating individuals to search for more information about a political topic. 
+This week, I assess the role of contextual influence on political behavior, and use the specific example of the 2019 Harvard admissions ruling to assess potential channels through which the events that a person (or the general public) is exposed to can influence changes in political attitudes and behavior. 
 
 ### Emotion and Politics
 Emotion has historically played an interesting role in politics. Dating back to the Enlightenment, when various elements of democracy were being rolled out in Western Europe, there has been discussion about the role of emotion in public policy: for instance, Madison's *Federalist Papers 49* argued that the "passions" of the public should be "controlled and regulated" by the government for the best possible outcomes, such that only the "reason" of the public is actually contributing to the democratic process. In this sense, even based on intuition alone, it seems clear that emotionally-afflicted publics will not be able to make the best decisions for themselves, since emotion can distort one's thinking and lead to favoring one thing over another even when all the evidence might point in the opposite direction.
