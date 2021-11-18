@@ -34,6 +34,15 @@ Next, I operationalized my hypothesis. I decided to choose the following four va
 - `discrimination_whites`: this was a question on the survey that asks about the level of discrimination today against white Americans. A higher value represents less discrimination.
 - `group_favorability_blacks`: this was a question that asked about how favorable a respondent's impression of the Black community is. A higher value represents lower favorability.
 
+After defining these variables, I did a bit of data cleaning and performed a series of initial analyses, looking at the difference in means for each of the four variables from before and after the "treatment" (the October 1, 2019 ruling). I found that all four 
+
+| Variable | Estimated Difference in Means | P-Value | Cohen's D | Cohen's D Description |
+| --- | --- | --- | --- | --- |
+| `racial_attitudes_tryhard` | 0.0498 | 0.2126 | -0.0369 | Negligible | 
+| `discrimination_blacks` | -0.1262 | 0.0003 | 0.1057 | Negligible | 
+| `discrimination_whites` | 0.0705 | 0.0571 | -0.0561 | Negligible | 
+| `group_favorability_blacks` | 0.0371 | 0.1586 | -0.443 | Negligible | 
+
 ### Evaluating Emotional Responses
 I ended up regressing two very different multivariate models to gauge the role of emotion in politics, based on the Clifford and Jerit first-experiment data. The first model used the respondent's level of "disgust" as the outcome variable, while the second used the amount of time that the respondent spent on reading the initial article about the disease as the outcome variable. The following predictor/independent variables were used:
 
